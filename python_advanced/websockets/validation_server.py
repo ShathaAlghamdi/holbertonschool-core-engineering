@@ -22,7 +22,7 @@ async def validate_message(websocket):
 
 async def main():
     """Start the WebSocket validation server."""
-    async with serve(validate_message, "localhost", 8765):
+    async with serve(validate_message, "127.0.0.1", 8765):
         await asyncio.Future()
 
 
