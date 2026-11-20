@@ -12,7 +12,7 @@ async def echo(websocket):
 
 
 async def main():
-    server = await serve(echo, "localhost", 8765)
+    server = await serve(echo, "127.0.0.1", 8765)
     await server.serve_forever()
 
 
