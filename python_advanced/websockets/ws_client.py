@@ -10,7 +10,7 @@ from websockets.asyncio.server import serve
 async def connect_and_send(uri: str ,text:str) -> str:
     """Connect to a websocket server and send a message."""
     async with websockets.connect(uri) as websocket:
-        await websocket.send(text)
+        await websocket.send("Hello WebSocket")
         response = await websocket.recv()
         return response
 
