@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 
 """WebSocket server with message validation."""
